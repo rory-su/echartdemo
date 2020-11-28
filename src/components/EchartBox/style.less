@@ -1,0 +1,91 @@
+.echart_box {
+    height          : 100%;
+    width           : 100%;
+    background-color: bisque;
+    border          : 1px solid yellowgreen;
+    .top_menu {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+        height          : 40px;
+        padding         : 0px 5px;
+        background-color: azure;
+        position        : absolute;
+        width           : calc(100% - 3px);
+        z-index         : 1000;
+
+        .title {
+            font-weight: bold;
+            font-size  : 16px;
+        }
+
+        .btns>span {
+            margin-right: 7px;
+
+            &:hover {
+                color: #40a9ff;
+            }
+        }
+    }
+
+    .collapse_board_right {
+        position        : absolute;
+        background-color: blue;
+        z-index         : 900;
+        top             : 0;
+        right           : -400px;
+        display         : none;
+    }
+
+    .collapse_board_left {
+        width           : 400px;
+        height          : 0px;
+        position        : absolute;
+        left            : -400px;
+        z-index         : 1100;
+        background-color: aliceblue;
+        top             : 0;
+        display         : none;
+    }
+
+    .collapse_board_center {
+        position        : absolute;
+        height          : 300px;
+        top             : -300px;
+        right           : 0px;
+        z-index         : 1100;
+        background-color: #40a9ff;
+        display         : none;
+    }
+
+    .collapse_board_active {
+        display          : block;
+        height           : 99%;
+        width            : 400px;
+        right            : -400px;
+        animation        : rightshow 2s 1;
+        -webkit-animation: rightshow 2s 1;
+    }
+
+    @-webkit-keyframes rightshow {
+        0% {
+            right: 0px;
+        }
+
+        100% {
+            right: -400px;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes rightshow {
+        0% {
+            right: 0px;
+        }
+
+        100% {
+            right: -400px;
+        }
+    }
+
+}
