@@ -10,7 +10,7 @@ const TabLayout: React.FC<Iprops> = ({ charts = [], centermap }) => {
     return <Row className="tab_layout">
         <Col className="col_line" span={7}>
             <Row className="default_item">
-                <EchartBox title={charts[0].title} collapseRFC='right'>{charts[0].chart}</EchartBox>
+                <EchartBox title={charts[0].title} collapseRFC='right' detail={charts[0].detail}>{charts[0].chart}</EchartBox>
             </Row>
             <Row className="default_item">
                 <EchartBox title={charts[0].title} collapseRFC='right'>{charts[0].chart}</EchartBox>
