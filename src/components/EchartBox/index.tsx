@@ -44,7 +44,7 @@ const EchartBox: React.FC<Iprops> = ({ children, title, collapseRFC, detail = []
             </div>
         </div>
         {children}
-        <div className={`collapse_board_${collapseRFC} ${ishover ? 'collapse_board_active' : ''}`} ref={ref}>
+        <div className={`collapse_board_${collapseRFC} ${ishover ? 'collapse_board_active' : 'collapse_board_close'}`} ref={ref}>
             <div className="board_content">
 
                 {
