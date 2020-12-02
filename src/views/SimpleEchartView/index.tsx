@@ -13,7 +13,7 @@ const SimpleEchartView: React.FC = () => {
     },[testvalue.current])
     return <div>
         {testvalue.current}
-        other 分支
+        other 分支   修改修改修改
     </div>
 }
 export default SimpleEchartView;
